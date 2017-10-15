@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="12">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="11">
+            <objects>
+                <navigationController id="12" sceneMemberID="viewController" customClass="MainNavigationController" storyboardIdentifier="MainNavigation">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="14">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue id="218" destination="21" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="-10"/>
+        </scene>
+        <scene sceneID="20">
+            <objects>
+                <viewController id="21" sceneMemberID="viewController" customClass="LoginViewController" storyboardIdentifier="LoginView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="18"/>
+                        <viewControllerLayoutGuide type="bottom" id="19"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="220" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Número consecutivo" textAlignment="center">
+                                <rect key="frame" x="20" y="313" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <constraints>
+                                    <constraint id="1045" firstItem="220" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="221" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Póliza Seguro Popular" textAlignment="center">
+                                <rect key="frame" x="20" y="245" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <constraints>
+                                    <constraint id="1040" firstItem="221" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="222" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="422" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Iniciar sesión">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="347" destination="249" kind="showDetail" identifier="loginUserSeguroPopular"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1050" firstItem="222" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="223" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="65" width="600" height="55"/>
+                                <constraints>
+                                    <constraint id="5178" firstItem="223" firstAttribute="height" constant="55"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1036" firstItem="22" firstAttribute="trailing" secondItem="221" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1039" firstItem="221" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="20"/>
+                            <constraint id="1041" firstItem="22" firstAttribute="trailing" secondItem="220" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1042" firstItem="220" firstAttribute="top" secondItem="221" secondAttribute="bottom" constant="38"/>
+                            <constraint id="1044" firstItem="220" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="20"/>
+                            <constraint id="1046" firstItem="222" firstAttribute="top" secondItem="220" secondAttribute="bottom" constant="79"/>
+                            <constraint id="1047" firstItem="22" firstAttribute="trailing" secondItem="222" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1048" firstItem="22" firstAttribute="bottom" secondItem="222" secondAttribute="bottom" constant="148"/>
+                            <constraint id="1049" firstItem="222" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="20"/>
+                            <constraint id="5013" firstItem="223" firstAttribute="top" secondItem="22" secondAttribute="top" constant="65"/>
+                            <constraint id="5014" firstItem="223" firstAttribute="leading" secondItem="22" secondAttribute="leading"/>
+                            <constraint id="5015" firstItem="223" firstAttribute="trailing" secondItem="22" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Identificarse" id="217" key="navigationItem">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="481"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="polizaTextField" destination="221" id="name-outlet-221"/>
+                        <outlet property="numeroConsecutivoTextField" destination="220" id="name-outlet-220"/>
+                        <outlet property="iniciarSesionButton" destination="222" id="name-outlet-222"/>
+                        <outlet property="logueoNavigationItem" destination="217" id="name-outlet-217"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-15"/>
+        </scene>
+        <scene sceneID="248">
+            <objects>
+                <tabBarController id="249" sceneMemberID="viewController" customClass="AppTabBarController" storyboardIdentifier="usuarioStoryBoard">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="252">
+                        <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                    </tabBar>
+                    <connections>
+                        <segue id="588" destination="492" kind="relationship" relationship="viewControllers"/>
+                        <segue id="901" destination="766" kind="relationship" relationship="viewControllers"/>
+                        <segue id="957" destination="782" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="253" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="-2"/>
+        </scene>
+        <scene sceneID="491">
+            <objects>
+                <navigationController id="492" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="494">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue id="627" destination="593" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" id="587" title="Usuario" image="User"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="495" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535" y="-1264"/>
+        </scene>
+        <scene sceneID="592">
+            <objects>
+                <viewController id="593" sceneMemberID="viewController" customClass="UsuarioViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="590"/>
+                        <viewControllerLayoutGuide type="bottom" id="591"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="594">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="744" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="65" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="1615" firstItem="744" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Folio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="745" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="132" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1625" firstItem="745" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número consecutivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="746" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="161" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1631" firstItem="746" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="747" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="190" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido paterno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="748" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="219" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1639" firstItem="748" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido materno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="749" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="248" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1648" firstItem="749" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="750" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="277" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1647" firstItem="750" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="751" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="306" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1654" firstItem="751" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="752" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="337" width="580" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1666" firstItem="752" firstAttribute="height" constant="18"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="753" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" text="Unidad de salud asignada">
+                                <rect key="frame" x="20" y="392" width="580" height="55"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1675" firstItem="753" firstAttribute="height" constant="55"/>
+                                    <constraint id="1678" firstItem="753" firstAttribute="width" constant="580"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="754" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="455" width="600" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Póliza">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="1213" destination="969" kind="show" identifier="visualizarCapturaSegue"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1027" translatesAutoresizingMaskIntoConstraints="NO" text="Fecha de Vencimiento">
+                                <rect key="frame" x="20" y="363" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1611" firstItem="744" firstAttribute="top" secondItem="594" secondAttribute="top" constant="65"/>
+                            <constraint id="1613" firstItem="744" firstAttribute="leading" secondItem="594" secondAttribute="leading"/>
+                            <constraint id="1614" firstItem="744" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1622" firstItem="745" firstAttribute="top" secondItem="744" secondAttribute="bottom" constant="17"/>
+                            <constraint id="1623" firstItem="745" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1624" firstItem="745" firstAttribute="trailing" secondItem="746" secondAttribute="trailing"/>
+                            <constraint id="1626" firstItem="746" firstAttribute="top" secondItem="745" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1629" firstItem="746" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1630" firstItem="746" firstAttribute="trailing" secondItem="747" secondAttribute="trailing"/>
+                            <constraint id="1632" firstItem="747" firstAttribute="top" secondItem="746" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1633" firstItem="747" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1634" firstItem="747" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1635" firstItem="748" firstAttribute="top" secondItem="747" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1636" firstItem="748" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1637" firstItem="748" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1638" firstItem="749" firstAttribute="top" secondItem="748" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1642" firstItem="749" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1643" firstItem="749" firstAttribute="trailing" secondItem="750" secondAttribute="trailing"/>
+                            <constraint id="1644" firstItem="750" firstAttribute="top" secondItem="749" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1645" firstItem="750" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1646" firstItem="750" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1651" firstItem="751" firstAttribute="top" secondItem="750" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1652" firstItem="751" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1653" firstItem="751" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1663" firstItem="752" firstAttribute="top" secondItem="751" secondAttribute="bottom" constant="10"/>
+                            <constraint id="1664" firstItem="752" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1665" firstItem="752" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1667" firstItem="1027" firstAttribute="top" secondItem="752" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1668" firstItem="1027" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1669" firstItem="1027" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1672" firstItem="753" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                            <constraint id="1673" firstItem="753" firstAttribute="leading" secondItem="594" secondAttribute="leading" constant="20"/>
+                            <constraint id="1674" firstItem="753" firstAttribute="top" secondItem="1027" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1683" firstItem="754" firstAttribute="top" secondItem="753" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1684" firstItem="754" firstAttribute="leading" secondItem="594" secondAttribute="leading"/>
+                            <constraint id="1685" firstItem="754" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Usuario" id="626" key="navigationItem"/>
+                    <connections>
+                        <outlet property="capturaPolizaButton" destination="754" id="name-outlet-754"/>
+                        <outlet property="folioUsuarioLabel" destination="745" id="name-outlet-745"/>
+                        <outlet property="numeroConsecutivoUsuarioLabel" destination="746" id="name-outlet-746"/>
+                        <outlet property="apellidoPaternoUsuarioLabel" destination="748" id="name-outlet-748"/>
+                        <outlet property="apellidoMaternoUsuarioLabel" destination="749" id="name-outlet-749"/>
+                        <outlet property="nombreUsuarioLabel" destination="747" id="name-outlet-747"/>
+                        <outlet property="sexoUsuarioLabel" destination="750" id="name-outlet-750"/>
+                        <outlet property="edadUsuarioLabel" destination="751" id="name-outlet-751"/>
+                        <outlet property="curpUsuarioLabel" destination="752" id="name-outlet-752"/>
+                        <outlet property="unidadSaludUsuarioLabel" destination="753" id="name-outlet-753"/>
+                        <outlet property="fechaVencimientoUsuarioLabel" destination="1027" id="name-outlet-1027"/>
+                    </connections>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="704"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="595" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="-1267"/>
+        </scene>
+        <scene sceneID="765">
+            <objects>
+                <navigationController id="766" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="768">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="4759" destination="3644" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" title="Centros de Afiliación" id="900" image="Map"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="769" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563" y="-484"/>
+        </scene>
+        <scene sceneID="781">
+            <objects>
+                <navigationController id="782" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="784">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue id="883" destination="798" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" id="956" title="Más" image="ComoMeSiento"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="785" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="374"/>
+        </scene>
+        <scene sceneID="797">
+            <objects>
+                <viewController id="798" sceneMemberID="viewController" customClass="MenuViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="795"/>
+                        <viewControllerLayoutGuide type="bottom" id="796"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="799">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1005" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="176" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Atención de solicitud de servicios">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="1517" destination="1477" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1698" firstItem="1005" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1006" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="234" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                                <state key="normal" title="Notificaciones">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4191" destination="1967" kind="show"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1007" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="1694" firstItem="1007" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1008" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="363" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Cerrar Sesión">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1009" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="298" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="¿Cómo me siento?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4211" destination="2204" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1691" firstItem="1007" firstAttribute="top" secondItem="799" secondAttribute="top" constant="64"/>
+                            <constraint id="1692" firstItem="1007" firstAttribute="leading" secondItem="799" secondAttribute="leading"/>
+                            <constraint id="1693" firstItem="1007" firstAttribute="trailing" secondItem="799" secondAttribute="trailing"/>
+                            <constraint id="1695" firstItem="1005" firstAttribute="top" secondItem="1007" secondAttribute="bottom" constant="62"/>
+                            <constraint id="1696" firstItem="1005" firstAttribute="leading" secondItem="799" secondAttribute="leading" constant="20"/>
+                            <constraint id="1697" firstItem="799" firstAttribute="trailing" secondItem="1005" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1699" firstItem="1006" firstAttribute="top" secondItem="1005" secondAttribute="bottom" constant="28"/>
+                            <constraint id="1700" firstItem="1006" firstAttribute="leading" secondItem="799" secondAttribute="leading" constant="20"/>
+                            <constraint id="1701" firstItem="799" firstAttribute="trailing" secondItem="1006" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1702" firstItem="1009" firstAttribute="top" secondItem="1006" secondAttribute="bottom" constant="34"/>
+                            <constraint id="1703" firstItem="1009" firstAttribute="leading" secondItem="799" secondAttribute="leading" constant="20"/>
+                            <constraint id="1704" firstItem="799" firstAttribute="trailing" secondItem="1009" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1705" firstItem="1008" firstAttribute="top" secondItem="1009" secondAttribute="bottom" constant="35"/>
+                            <constraint id="1706" firstItem="799" firstAttribute="trailing" secondItem="1008" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1707" firstItem="1008" firstAttribute="leading" secondItem="799" secondAttribute="leading" constant="20"/>
+                        </constraints>
+                    </view>
+                    <navigationItem id="882" key="navigationItem" title="Más"/>
+                    <connections>
+                        <outlet property="cerrarSesionButton" destination="1008" id="name-outlet-1008"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="800" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="375"/>
+        </scene>
+        <scene sceneID="968">
+            <objects>
+                <viewController id="969" sceneMemberID="viewController" customClass="PolizaViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="966"/>
+                        <viewControllerLayoutGuide type="bottom" id="967"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="970">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1003" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="63" width="600" height="592"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4984" firstItem="966" firstAttribute="bottom" secondItem="1003" secondAttribute="top" constant="1"/>
+                            <constraint id="4985" firstItem="1003" firstAttribute="trailing" secondItem="970" secondAttribute="trailing"/>
+                            <constraint id="4986" firstItem="1003" firstAttribute="leading" secondItem="970" secondAttribute="leading"/>
+                            <constraint id="4987" firstItem="1003" firstAttribute="bottom" secondItem="967" secondAttribute="top"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="polizaImageView" destination="1003" id="name-outlet-1003"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="971" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2981" y="-1270"/>
+        </scene>
+        <scene sceneID="1476">
+            <objects>
+                <viewController id="1477" sceneMemberID="viewController" customClass="SolicitudAtencionViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1474"/>
+                        <viewControllerLayoutGuide type="bottom" id="1475"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1478">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1519" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="63" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="1714" firstItem="1519" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1525" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" placeholder="Información de contacto" misplaced="YES">
+                                <rect key="frame" x="0.0" y="190" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1526" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" placeholder="Solicitud..." misplaced="YES">
+                                <rect key="frame" x="0.0" y="228" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1527" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="273" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Enviar solicitud">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1528" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" misplaced="YES" text="Quejas, sugerencias o felicitaciones sobre el servicio recibido">
+                                <rect key="frame" x="0.0" y="133" width="600" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1736" translatesAutoresizingMaskIntoConstraints="NO" text="Atención telefónica" misplaced="YES">
+                                <rect key="frame" x="0.0" y="380" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1780" firstItem="1736" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1764" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="3" misplaced="YES">
+                                <rect key="frame" x="0.0" y="311" width="600" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <string key="text">Nota: La solicitud se envía de forma anónima, la opcion de contacto es para que el usuario decida generar seguimiento directo.</string>
+                                <constraints>
+                                    <constraint id="1776" firstItem="1764" firstAttribute="height" constant="61"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1928" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="128" y="409" width="343" height="66"/>
+                                <state key="normal" backgroundImage="t1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="1932" firstItem="1928" firstAttribute="height" constant="66"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1710" firstItem="1519" firstAttribute="top" secondItem="1478" secondAttribute="top" constant="63"/>
+                            <constraint id="1711" firstItem="1519" firstAttribute="trailing" secondItem="1478" secondAttribute="trailing"/>
+                            <constraint id="1712" firstItem="1519" firstAttribute="leading" secondItem="1478" secondAttribute="leading"/>
+                            <constraint id="1713" firstItem="1528" firstAttribute="top" secondItem="1519" secondAttribute="bottom" constant="20"/>
+                            <constraint id="1715" firstItem="1528" firstAttribute="trailing" secondItem="1478" secondAttribute="trailing"/>
+                            <constraint id="1716" firstItem="1528" firstAttribute="leading" secondItem="1478" secondAttribute="leading"/>
+                            <constraint id="1753" firstItem="1525" firstAttribute="top" secondItem="1528" secondAttribute="bottom" constant="24"/>
+                            <constraint id="1754" firstItem="1525" firstAttribute="trailing" secondItem="1478" secondAttribute="trailing"/>
+                            <constraint id="1755" firstItem="1525" firstAttribute="leading" secondItem="1478" secondAttribute="leading"/>
+                            <constraint id="1756" firstItem="1526" firstAttribute="top" secondItem="1525" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1757" firstItem="1526" firstAttribute="trailing" secondItem="1478" secondAttribute="trailing"/>
+                            <constraint id="1758" firstItem="1526" firstAttribute="leading" secondItem="1478" secondAttribute="leading"/>
+                            <constraint id="1761" firstItem="1478" firstAttribute="trailing" secondItem="1527" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1762" firstItem="1527" firstAttribute="top" secondItem="1526" secondAttribute="bottom" constant="15"/>
+                            <constraint id="1763" firstItem="1527" firstAttribute="leading" secondItem="1478" secondAttribute="leading" constant="20"/>
+                            <constraint id="1773" firstItem="1764" firstAttribute="top" secondItem="1527" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1774" firstItem="1764" firstAttribute="leading" secondItem="1478" secondAttribute="leading"/>
+                            <constraint id="1775" firstItem="1764" firstAttribute="trailing" secondItem="1478" secondAttribute="trailing"/>
+                            <constraint id="1777" firstItem="1736" firstAttribute="top" secondItem="1764" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1778" firstItem="1736" firstAttribute="leading" secondItem="1478" secondAttribute="leading"/>
+                            <constraint id="1779" firstItem="1736" firstAttribute="trailing" secondItem="1478" secondAttribute="trailing"/>
+                            <constraint id="1929" firstItem="1478" firstAttribute="trailing" secondItem="1928" secondAttribute="trailing" constant="129"/>
+                            <constraint id="1930" firstItem="1928" firstAttribute="leading" secondItem="1478" secondAttribute="leading" constant="128"/>
+                            <constraint id="1931" firstItem="1928" firstAttribute="top" secondItem="1736" secondAttribute="bottom" constant="8"/>
+                        </constraints>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </view>
+                    <connections>
+                        <outlet property="enviarEmailButton" destination="1527" id="name-outlet-1527"/>
+                        <outlet property="informacionContactoTextField" destination="1525" id="name-outlet-1525"/>
+                        <outlet property="solicitudTextField" destination="1526" id="name-outlet-1526"/>
+                        <outlet property="telefonoButton" destination="1928" id="name-outlet-1928"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1479" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2921" y="374"/>
+        </scene>
+        <scene sceneID="1961">
+            <objects>
+                <viewController id="1962" sceneMemberID="viewController" customClass="NotificacionViewController" storyboardIdentifier="NotificacionView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1959"/>
+                        <viewControllerLayoutGuide type="bottom" id="1960"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1963">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2181" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="5374" firstItem="2181" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="13199" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="122" width="600" height="478"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="13204" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="478"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13210" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13211" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="50">
+                                                <rect key="frame" x="20" y="63" width="560" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint id="13212" firstItem="13210" firstAttribute="top" secondItem="13204" secondAttribute="top" constant="20"/>
+                                            <constraint id="13213" firstItem="13204" firstAttribute="trailing" secondItem="13210" secondAttribute="trailing" constant="20"/>
+                                            <constraint id="13214" firstItem="13210" firstAttribute="leading" secondItem="13204" secondAttribute="leading" constant="20"/>
+                                            <constraint id="13215" firstItem="13211" firstAttribute="top" secondItem="13210" secondAttribute="bottom" constant="22"/>
+                                            <constraint id="13216" firstItem="13204" firstAttribute="trailing" secondItem="13211" secondAttribute="trailing" constant="20"/>
+                                            <constraint id="13217" firstItem="13211" firstAttribute="leading" secondItem="13204" secondAttribute="leading" constant="20"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="13205" firstItem="13204" firstAttribute="top" secondItem="13199" secondAttribute="top"/>
+                                    <constraint id="13206" firstItem="13204" firstAttribute="trailing" secondItem="13199" secondAttribute="trailing"/>
+                                    <constraint id="13207" firstItem="13204" firstAttribute="leading" secondItem="13199" secondAttribute="leading"/>
+                                    <constraint id="13208" firstItem="13204" firstAttribute="bottom" secondItem="13199" secondAttribute="bottom"/>
+                                    <constraint id="13209" firstItem="13204" firstAttribute="width" secondItem="13199" secondAttribute="width"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="13147" firstItem="2181" firstAttribute="top" secondItem="1959" secondAttribute="bottom"/>
+                            <constraint id="13148" firstItem="2181" firstAttribute="trailing" secondItem="1963" secondAttribute="trailing"/>
+                            <constraint id="13149" firstItem="2181" firstAttribute="leading" secondItem="1963" secondAttribute="leading"/>
+                            <constraint id="13200" firstItem="13199" firstAttribute="top" secondItem="2181" secondAttribute="bottom" constant="8"/>
+                            <constraint id="13201" firstItem="13199" firstAttribute="trailing" secondItem="1963" secondAttribute="trailing"/>
+                            <constraint id="13202" firstItem="13199" firstAttribute="leading" secondItem="1963" secondAttribute="leading"/>
+                            <constraint id="13220" firstItem="13199" firstAttribute="bottom" secondItem="1960" secondAttribute="top" constant="49"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tituloLabel" destination="13210" id="name-outlet-13210"/>
+                        <outlet property="descripcionLabel" destination="13211" id="name-outlet-13211"/>
+                    </connections>
+                    <navigationItem title="Detalles" id="13223" key="navigationItem">
+                        <barButtonItem key="leftBarButtonItem" title="Atrás" id="13224">
+                            <connections>
+                                <segue id="13263" destination="13176" kind="unwind" unwindAction="UnwindToNotificacionesTableViewController:"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1964" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="13176" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4342" y="1064"/>
+        </scene>
+        <scene sceneID="1966">
+            <objects>
+                <tableViewController id="1967" sceneMemberID="viewController" customClass="NotificacionesTableViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1968">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1971">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1971" id="1972">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1967" id="1969"/>
+                            <outlet property="delegate" destination="1967" id="1970"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem id="2034" key="navigationItem" title="Notificaciones"/>
+                    <connections>
+                        <segue id="2159" destination="1962" kind="show" identifier="notificacionSegue"/>
+                        <outlet property="notificacionesTableView" destination="1968" id="name-outlet-1968"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1973" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3633" y="1063"/>
+        </scene>
+        <scene sceneID="2203">
+            <objects>
+                <tableViewController id="2204" sceneMemberID="viewController" customClass="SintomasTableViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2206">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2209" customClass="SintomaTableViewCell" rowHeight="94" reuseIdentifier="Sintoma">
+                                <rect key="frame" x="0.0" y="28" width="600" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2209" id="2210">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2325" translatesAutoresizingMaskIntoConstraints="NO" image="sick.png">
+                                            <rect key="frame" x="40" y="11" width="86" height="62"/>
+                                            <constraints>
+                                                <constraint id="2331" firstItem="2325" firstAttribute="height" constant="62"/>
+                                                <constraint id="2332" firstItem="2325" firstAttribute="width" constant="86"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2326" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="216" y="36" width="340" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <constraints>
+                                                <constraint id="2336" firstItem="2326" firstAttribute="height" constant="21"/>
+                                            </constraints>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="2327" firstItem="2325" firstAttribute="top" secondItem="2210" secondAttribute="top" constant="11"/>
+                                        <constraint id="2328" firstItem="2325" firstAttribute="leading" secondItem="2210" secondAttribute="leading" constant="40"/>
+                                        <constraint id="2329" firstItem="2326" firstAttribute="leading" secondItem="2325" secondAttribute="trailing" constant="90"/>
+                                        <constraint id="2330" firstItem="2210" firstAttribute="bottom" secondItem="2325" secondAttribute="bottom" constant="20"/>
+                                        <constraint id="2333" firstItem="2326" firstAttribute="top" secondItem="2210" secondAttribute="top" constant="36"/>
+                                        <constraint id="2334" firstItem="2210" firstAttribute="bottom" secondItem="2326" secondAttribute="bottom" constant="36"/>
+                                        <constraint id="2335" firstItem="2210" firstAttribute="trailing" secondItem="2326" secondAttribute="trailing" constant="44"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nombreSintomaLabel" destination="2326" id="name-outlet-2326"/>
+                                    <segue id="3227" destination="2604" kind="showDetail" identifier="sintomaSegue"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2204" id="2207"/>
+                            <outlet property="delegate" destination="2204" id="2208"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Síntomas" id="2205">
+                        <barButtonItem key="rightBarButtonItem" id="2533" systemItem="add">
+                            <connections>
+                                <segue id="2572" destination="2340" kind="show"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sintomasTableView" destination="2206" id="name-outlet-2206"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2211" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3632" y="1767"/>
+        </scene>
+        <scene sceneID="2339">
+            <objects>
+                <viewController id="2340" sceneMemberID="viewController" customClass="AgregarSintomaViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2337"/>
+                        <viewControllerLayoutGuide type="bottom" id="2338"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2341">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2574" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="66" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="2578" firstItem="2574" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2579" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Síntoma">
+                                <rect key="frame" x="20" y="188" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="2583" firstItem="2579" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2584" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="2588" firstItem="2584" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="4773" destination="4452" kind="unwind" unwindAction="UnwindToSintomasTableViewController:"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="2575" firstItem="2574" firstAttribute="top" secondItem="2341" secondAttribute="top" constant="66"/>
+                            <constraint id="2576" firstItem="2574" firstAttribute="leading" secondItem="2341" secondAttribute="leading"/>
+                            <constraint id="2577" firstItem="2574" firstAttribute="trailing" secondItem="2341" secondAttribute="trailing"/>
+                            <constraint id="2580" firstItem="2579" firstAttribute="top" secondItem="2574" secondAttribute="bottom" constant="72"/>
+                            <constraint id="2581" firstItem="2341" firstAttribute="trailing" secondItem="2579" secondAttribute="trailing" constant="20"/>
+                            <constraint id="2582" firstItem="2579" firstAttribute="leading" secondItem="2341" secondAttribute="leading" constant="20"/>
+                            <constraint id="2585" firstItem="2584" firstAttribute="top" secondItem="2579" secondAttribute="bottom" constant="67"/>
+                            <constraint id="2586" firstItem="2341" firstAttribute="trailing" secondItem="2584" secondAttribute="trailing" constant="20"/>
+                            <constraint id="2587" firstItem="2584" firstAttribute="leading" secondItem="2341" secondAttribute="leading" constant="20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nombreSintomaTextField" destination="2579" id="name-outlet-2579"/>
+                        <outlet property="agregarSintomaButton" destination="2584" id="name-outlet-2584"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2342" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4452" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="2492"/>
+        </scene>
+        <scene sceneID="2603">
+            <objects>
+                <tabBarController id="2604" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2607">
+                        <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                        <color key="selectedImageTintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </tabBar>
+                    <connections>
+                        <segue id="2674" destination="2622" kind="relationship" relationship="viewControllers"/>
+                        <segue id="2779" destination="2638" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2608" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4356" y="1787"/>
+        </scene>
+        <scene sceneID="2621">
+            <objects>
+                <navigationController id="2622" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2624">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue id="3001" destination="2782" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" title="Fisico" id="2673" image="Fisico"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2625" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5085" y="1335"/>
+        </scene>
+        <scene sceneID="2637">
+            <objects>
+                <navigationController id="2638" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2640">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue id="2885" destination="2791" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" title="Emocional" id="2778" image="Emocional"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2641" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5084" y="2114"/>
+        </scene>
+        <scene sceneID="2781">
+            <objects>
+                <tableViewController id="2782" sceneMemberID="viewController" customClass="SintomasFisicosTableViewController" storyboardIdentifier="sintomasFisicosTable">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2783">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2786" customClass="SintomaFisicoTableViewCell" rowHeight="145" reuseIdentifier="sintomaFisico">
+                                <rect key="frame" x="0.0" y="28" width="600" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2786" id="2787">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="144"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3003" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="20" y="31" width="116" height="54"/>
+                                            <constraints>
+                                                <constraint id="4921" firstItem="3003" firstAttribute="width" constant="116"/>
+                                                <constraint id="4934" firstItem="3003" firstAttribute="height" constant="54"/>
+                                            </constraints>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="4934"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="4934"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3005" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="165" y="20" width="415" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3006" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="165" y="62" width="415" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3007" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="165" y="104" width="415" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="4909" firstItem="3003" firstAttribute="top" secondItem="2787" secondAttribute="top" constant="31"/>
+                                        <constraint id="4910" firstItem="3003" firstAttribute="leading" secondItem="2787" secondAttribute="leading" constant="20"/>
+                                        <constraint id="4911" firstItem="2787" firstAttribute="bottom" secondItem="3003" secondAttribute="bottom" constant="59"/>
+                                        <constraint id="4912" firstItem="3006" firstAttribute="leading" secondItem="3003" secondAttribute="trailing" constant="29"/>
+                                        <constraint id="4913" firstItem="3005" firstAttribute="top" secondItem="2787" secondAttribute="top" constant="20"/>
+                                        <constraint id="4914" firstItem="2787" firstAttribute="trailing" secondItem="3005" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="4915" firstItem="3006" firstAttribute="top" secondItem="3005" secondAttribute="bottom" constant="21"/>
+                                        <constraint id="4916" firstItem="2787" firstAttribute="trailing" secondItem="3006" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="4917" firstItem="3007" firstAttribute="top" secondItem="3006" secondAttribute="bottom" constant="21"/>
+                                        <constraint id="4918" firstItem="2787" firstAttribute="trailing" secondItem="3007" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="4922" firstItem="3005" firstAttribute="leading" secondItem="3003" secondAttribute="trailing" constant="29"/>
+                                        <constraint id="4923" firstItem="3007" firstAttribute="leading" secondItem="3003" secondAttribute="trailing" constant="29"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="intensidadImageView" destination="3003" id="name-outlet-3003"/>
+                                    <outlet property="descripcionSintomaFisicoLabel" destination="3005" id="name-outlet-3005"/>
+                                    <outlet property="intensidadSintomaFisicoLabel" destination="3006" id="name-outlet-3006"/>
+                                    <outlet property="fechaSintomaFisicoLabel" destination="3007" id="name-outlet-3007"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2782" id="2784"/>
+                            <outlet property="delegate" destination="2782" id="2785"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem id="2834" key="navigationItem" title="Físicos">
+                        <barButtonItem key="rightBarButtonItem" id="3010" systemItem="add">
+                            <connections>
+                                <segue id="4639" destination="3015" kind="show"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Atrás" id="4433">
+                            <connections>
+                                <segue id="4781" destination="4456" kind="unwind" unwindAction="UnwindToSintomasTableViewController:"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="SintomasFisicosTableView" destination="2783" id="name-outlet-2783"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2788" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4456" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5766" y="1336"/>
+        </scene>
+        <scene sceneID="2790">
+            <objects>
+                <tableViewController id="2791" sceneMemberID="viewController" storyboardIdentifier="sintomasEmocionalesTable" customClass="SintomasEmocionalesTableViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2792">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2795" rowHeight="143" customClass="SintomaEmocionalTableViewCell" reuseIdentifier="sintomaEmocional">
+                                <rect key="frame" x="0.0" y="28" width="600" height="143"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2795" id="2796">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3004" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="20" y="31" width="116" height="90"/>
+                                            <constraints>
+                                                <constraint id="4948" firstItem="3004" firstAttribute="width" constant="116"/>
+                                                <constraint id="4949" firstItem="3004" firstAttribute="height" constant="90"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3008" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="159" y="20" width="421" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3009" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="159" y="86" width="421" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="4939" firstItem="3004" firstAttribute="top" secondItem="2796" secondAttribute="top" constant="31"/>
+                                        <constraint id="4940" firstItem="3004" firstAttribute="leading" secondItem="2796" secondAttribute="leading" constant="20"/>
+                                        <constraint id="4941" firstItem="2796" firstAttribute="bottom" secondItem="3004" secondAttribute="bottom" constant="21"/>
+                                        <constraint id="4942" firstItem="3008" firstAttribute="leading" secondItem="3004" secondAttribute="trailing" constant="23"/>
+                                        <constraint id="4943" firstItem="3009" firstAttribute="leading" secondItem="3004" secondAttribute="trailing" constant="23"/>
+                                        <constraint id="4944" firstItem="3008" firstAttribute="top" secondItem="2796" secondAttribute="top" constant="20"/>
+                                        <constraint id="4945" firstItem="2796" firstAttribute="trailing" secondItem="3008" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="4946" firstItem="3009" firstAttribute="top" secondItem="3008" secondAttribute="bottom" constant="45"/>
+                                        <constraint id="4947" firstItem="2796" firstAttribute="trailing" secondItem="3009" secondAttribute="trailing" constant="20"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="emocionImageView" destination="3004" id="name-outlet-3004"/>
+                                    <outlet property="emocionSintomaEmocionalLabel" destination="3008" id="name-outlet-3008"/>
+                                    <outlet property="fechaSintomaEmocionalLabel" destination="3009" id="name-outlet-3009"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2791" id="2793"/>
+                            <outlet property="delegate" destination="2791" id="2794"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem title="Emocionales" id="2884" key="navigationItem">
+                        <barButtonItem key="rightBarButtonItem" id="3011" systemItem="add">
+                            <connections>
+                                <segue id="4597" destination="3022" kind="show"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Atrás" id="4434">
+                            <connections>
+                                <segue id="4787" destination="4457" kind="unwind" unwindAction="UnwindToSintomasTableViewController:"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="SintomasEmocionalesTableView" destination="2792" id="name-outlet-2792"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2797" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4457" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5766" y="2118"/>
+        </scene>
+        <scene sceneID="3014">
+            <objects>
+                <viewController id="3015" sceneMemberID="viewController" customClass="SintomaFisicoViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3012"/>
+                        <viewControllerLayoutGuide type="bottom" id="3013"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3016">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3092" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="3159" firstItem="3092" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="3122" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" placeholder="Descripción">
+                                <rect key="frame" x="20" y="146" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3123" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="212" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Happy.png" title="Sin dolor">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections/>
+                                <constraints>
+                                    <constraint id="4832" firstItem="3123" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3124" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="215" y="212" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Smile.png" title="Dolor leve">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections/>
+                                <constraints>
+                                    <constraint id="4831" firstItem="3124" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3125" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="430" y="212" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Sad.png" title="Moderado">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4830" firstItem="3125" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3126" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="332" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Worried.png" title="Severo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4833" firstItem="3126" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3127" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="215" y="332" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Cry-WF.png" title="Muy Severo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4834" firstItem="3127" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3128" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="430" y="332" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Cry.png" title="Máximo dolor">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4835" firstItem="3128" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3154" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="440" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Seleccione fecha">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="3279" destination="3244" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3155" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="478" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4492" destination="4458" kind="unwind" unwindAction="UnwindToSintomaFisicoViewController:"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4797" firstItem="3092" firstAttribute="top" secondItem="3012" secondAttribute="bottom"/>
+                            <constraint id="4798" firstItem="3092" firstAttribute="trailing" secondItem="3016" secondAttribute="trailing"/>
+                            <constraint id="4799" firstItem="3092" firstAttribute="leading" secondItem="3016" secondAttribute="leading"/>
+                            <constraint id="4800" firstItem="3122" firstAttribute="top" secondItem="3092" secondAttribute="bottom" constant="32"/>
+                            <constraint id="4801" firstItem="3123" firstAttribute="top" secondItem="3122" secondAttribute="bottom" constant="36"/>
+                            <constraint id="4802" firstItem="3123" firstAttribute="leading" secondItem="3016" secondAttribute="leading"/>
+                            <constraint id="4803" firstItem="3124" firstAttribute="top" secondItem="3122" secondAttribute="bottom" constant="36"/>
+                            <constraint id="4804" firstItem="3124" firstAttribute="leading" secondItem="3123" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4805" firstItem="3125" firstAttribute="leading" secondItem="3124" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4806" firstItem="3125" firstAttribute="top" secondItem="3122" secondAttribute="bottom" constant="36"/>
+                            <constraint id="4807" firstItem="3125" firstAttribute="trailing" secondItem="3016" secondAttribute="trailing"/>
+                            <constraint id="4808" firstItem="3128" firstAttribute="top" secondItem="3125" secondAttribute="bottom" constant="20"/>
+                            <constraint id="4809" firstItem="3128" firstAttribute="trailing" secondItem="3016" secondAttribute="trailing"/>
+                            <constraint id="4810" firstItem="3128" firstAttribute="leading" secondItem="3127" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4811" firstItem="3127" firstAttribute="top" secondItem="3124" secondAttribute="bottom" constant="20"/>
+                            <constraint id="4812" firstItem="3127" firstAttribute="leading" secondItem="3126" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4813" firstItem="3126" firstAttribute="top" secondItem="3123" secondAttribute="bottom" constant="20"/>
+                            <constraint id="4814" firstItem="3126" firstAttribute="leading" secondItem="3016" secondAttribute="leading"/>
+                            <constraint id="4822" firstItem="3124" firstAttribute="width" secondItem="3123" secondAttribute="width"/>
+                            <constraint id="4823" firstItem="3125" firstAttribute="width" secondItem="3123" secondAttribute="width"/>
+                            <constraint id="4824" firstItem="3127" firstAttribute="width" secondItem="3126" secondAttribute="width"/>
+                            <constraint id="4825" firstItem="3128" firstAttribute="width" secondItem="3126" secondAttribute="width"/>
+                            <constraint id="4828" firstItem="3016" firstAttribute="trailing" secondItem="3122" secondAttribute="trailing" constant="20"/>
+                            <constraint id="4829" firstItem="3122" firstAttribute="leading" secondItem="3016" secondAttribute="leading" constant="20"/>
+                            <constraint id="4836" firstItem="3154" firstAttribute="top" secondItem="3127" secondAttribute="bottom" constant="8"/>
+                            <constraint id="4837" firstItem="3016" firstAttribute="trailing" secondItem="3154" secondAttribute="trailing" constant="20"/>
+                            <constraint id="4838" firstItem="3154" firstAttribute="leading" secondItem="3016" secondAttribute="leading" constant="20"/>
+                            <constraint id="4839" firstItem="3155" firstAttribute="top" secondItem="3154" secondAttribute="bottom" constant="8"/>
+                            <constraint id="4840" firstItem="3016" firstAttribute="trailing" secondItem="3155" secondAttribute="trailing" constant="20"/>
+                            <constraint id="4841" firstItem="3155" firstAttribute="leading" secondItem="3016" secondAttribute="leading" constant="20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sinDolorButton" destination="3123" id="name-outlet-3123"/>
+                        <outlet property="dolorLeveButton" destination="3124" id="name-outlet-3124"/>
+                        <outlet property="dolorModeradoButton" destination="3125" id="name-outlet-3125"/>
+                        <outlet property="dolorSeveroButton" destination="3126" id="name-outlet-3126"/>
+                        <outlet property="dolorMuySeveroButton" destination="3127" id="name-outlet-3127"/>
+                        <outlet property="maximoDolorButton" destination="3128" id="name-outlet-3128"/>
+                        <outlet property="fechaSintomaFisicoButton" destination="3154" id="name-outlet-3154"/>
+                        <outlet property="guardarSintomaFisicoButton" destination="3155" id="name-outlet-3155"/>
+                        <outlet property="descripcionSintomaFisicoTextField" destination="3122" id="name-outlet-3122"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3017" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4458" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="6508" y="1338"/>
+        </scene>
+        <scene sceneID="3021">
+            <objects>
+                <viewController id="3022" sceneMemberID="viewController" customClass="SintomaEmocionalViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3019"/>
+                        <viewControllerLayoutGuide type="bottom" id="3020"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3023">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3093" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="65" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="4854" firstItem="3093" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3231" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="150" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Surprised.png" title="Asustado">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4875" firstItem="3231" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3232" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="215" y="150" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Sleepy-02.png" title="Cansado">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections/>
+                                <constraints>
+                                    <constraint id="4876" firstItem="3232" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3233" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="430" y="150" width="170" height="100"/>
+                                <size key="titleShadowOffset" width="16" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Happy.png" title="Contento">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4877" firstItem="3233" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3290" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="270" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Angry-WF.png" title="Enojado">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4880" firstItem="3290" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3291" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="215" y="270" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Annoyed-WF.png" title="Hambriento">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4879" firstItem="3291" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3292" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="430" y="270" width="170" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Sad-WF.png" title="Triste">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="4878" firstItem="3292" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3293" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="395" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77647058823529413" green="0.15686274509803921" blue="0.21176470588235294" alpha="1"/>
+                                <state key="normal" title="SELECCIONA LA FECHA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="3385" destination="3237" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3294" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="442" width="560" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.77254901960784317" green="0.15686274509803921" blue="0.20784313725490197" alpha="1"/>
+                                <state key="normal" title="GUARDAR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4855" firstItem="3093" firstAttribute="top" secondItem="3019" secondAttribute="bottom" constant="1"/>
+                            <constraint id="4856" firstItem="3093" firstAttribute="trailing" secondItem="3023" secondAttribute="trailing"/>
+                            <constraint id="4857" firstItem="3093" firstAttribute="leading" secondItem="3023" secondAttribute="leading"/>
+                            <constraint id="4858" firstItem="3231" firstAttribute="top" secondItem="3093" secondAttribute="bottom" constant="35"/>
+                            <constraint id="4859" firstItem="3231" firstAttribute="leading" secondItem="3023" secondAttribute="leading"/>
+                            <constraint id="4863" firstItem="3232" firstAttribute="top" secondItem="3093" secondAttribute="bottom" constant="35"/>
+                            <constraint id="4864" firstItem="3232" firstAttribute="leading" secondItem="3231" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4865" firstItem="3233" firstAttribute="leading" secondItem="3232" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4866" firstItem="3233" firstAttribute="top" secondItem="3093" secondAttribute="bottom" constant="35"/>
+                            <constraint id="4867" firstItem="3233" firstAttribute="trailing" secondItem="3023" secondAttribute="trailing"/>
+                            <constraint id="4868" firstItem="3292" firstAttribute="top" secondItem="3233" secondAttribute="bottom" constant="20"/>
+                            <constraint id="4869" firstItem="3292" firstAttribute="trailing" secondItem="3023" secondAttribute="trailing"/>
+                            <constraint id="4870" firstItem="3292" firstAttribute="leading" secondItem="3291" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4871" firstItem="3291" firstAttribute="top" secondItem="3232" secondAttribute="bottom" constant="20"/>
+                            <constraint id="4872" firstItem="3291" firstAttribute="leading" secondItem="3290" secondAttribute="trailing" constant="45"/>
+                            <constraint id="4873" firstItem="3290" firstAttribute="top" secondItem="3231" secondAttribute="bottom" constant="20"/>
+                            <constraint id="4874" firstItem="3290" firstAttribute="leading" secondItem="3023" secondAttribute="leading"/>
+                            <constraint id="4881" firstItem="3293" firstAttribute="top" secondItem="3291" secondAttribute="bottom" constant="25"/>
+                            <constraint id="4882" firstItem="3293" firstAttribute="leading" secondItem="3023" secondAttribute="leading" constant="20"/>
+                            <constraint id="4883" firstItem="3023" firstAttribute="trailing" secondItem="3293" secondAttribute="trailing" constant="20"/>
+                            <constraint id="4884" firstItem="3294" firstAttribute="top" secondItem="3293" secondAttribute="bottom" constant="17"/>
+                            <constraint id="4885" firstItem="3294" firstAttribute="leading" secondItem="3023" secondAttribute="leading" constant="20"/>
+                            <constraint id="4886" firstItem="3023" firstAttribute="trailing" secondItem="3294" secondAttribute="trailing" constant="20"/>
+                            <constraint id="4887" firstItem="3232" firstAttribute="width" secondItem="3231" secondAttribute="width"/>
+                            <constraint id="4888" firstItem="3233" firstAttribute="width" secondItem="3231" secondAttribute="width"/>
+                            <constraint id="4889" firstItem="3291" firstAttribute="width" secondItem="3290" secondAttribute="width"/>
+                            <constraint id="4890" firstItem="3292" firstAttribute="width" secondItem="3290" secondAttribute="width"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="asustadoButton" destination="3231" id="name-outlet-3231"/>
+                        <outlet property="cansadoButton" destination="3232" id="name-outlet-3232"/>
+                        <outlet property="contentoButton" destination="3233" id="name-outlet-3233"/>
+                        <outlet property="enojadoButton" destination="3290" id="name-outlet-3290"/>
+                        <outlet property="hambrientoButton" destination="3291" id="name-outlet-3291"/>
+                        <outlet property="tristeButton" destination="3292" id="name-outlet-3292"/>
+                        <outlet property="fechaSintomaEmocionalButton" destination="3293" id="name-outlet-3293"/>
+                        <outlet property="guardarSintomaEmocionalButton" destination="3294" id="name-outlet-3294"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3024" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6516" y="2119"/>
+        </scene>
+        <scene sceneID="3236">
+            <objects>
+                <viewController id="3237" sceneMemberID="viewController" customClass="FechaSintomaEmocionalViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3234"/>
+                        <viewControllerLayoutGuide type="bottom" id="3235"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3238">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="3288" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="157" width="560" height="375"/>
+                                <date key="date" timeIntervalSinceReferenceDate="332704801.65417802">
+                                    <!--2011-07-18 18:00:01 +0000-->
+                                </date>
+                                <constraints>
+                                    <constraint id="3349" firstItem="3288" firstAttribute="height" constant="375"/>
+                                    <constraint id="3350" firstItem="3288" firstAttribute="width" constant="560"/>
+                                </constraints>
+                            </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3289" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="63" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="3344" firstItem="3289" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="4553" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="130" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="4554"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <constraints>
+                            <constraint id="3341" firstItem="3234" firstAttribute="bottom" secondItem="3289" secondAttribute="top" constant="1"/>
+                            <constraint id="3342" firstItem="3289" firstAttribute="leading" secondItem="3238" secondAttribute="leading"/>
+                            <constraint id="3343" firstItem="3289" firstAttribute="trailing" secondItem="3238" secondAttribute="trailing"/>
+                            <constraint id="3345" firstItem="3288" firstAttribute="top" secondItem="3289" secondAttribute="bottom" constant="44"/>
+                            <constraint id="3346" firstItem="3288" firstAttribute="leading" secondItem="3238" secondAttribute="leading" constant="20"/>
+                            <constraint id="3347" firstItem="3238" firstAttribute="bottom" secondItem="3288" secondAttribute="bottom" constant="68"/>
+                            <constraint id="3348" firstItem="3238" firstAttribute="trailing" secondItem="3288" secondAttribute="trailing" constant="20"/>
+                        </constraints>
+                    </view>
+                    <navigationItem id="4557" key="navigationItem">
+                        <barButtonItem key="rightBarButtonItem" title="Listo" id="4558">
+                            <connections>
+                                <segue id="4563" destination="4460" kind="unwind" unwindAction="UnwindToSintomaEmocionalViewController:"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fechaSintomaEmocionalDatePicker" destination="3288" id="name-outlet-3288"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3239" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4460" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7223" y="2128"/>
+        </scene>
+        <scene sceneID="3243">
+            <objects>
+                <viewController id="3244" sceneMemberID="viewController" customClass="FechaSintomaFisicoViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3241"/>
+                        <viewControllerLayoutGuide type="bottom" id="3242"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3245">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3248" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="63" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="5317" firstItem="3248" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="3281" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="157" width="560" height="364"/>
+                                <date key="date" timeIntervalSinceReferenceDate="332704801.65417802">
+                                    <!--2011-07-18 18:00:01 +0000-->
+                                </date>
+                                <constraints>
+                                    <constraint id="3286" firstItem="3281" firstAttribute="height" constant="364"/>
+                                    <constraint id="3287" firstItem="3281" firstAttribute="width" constant="560"/>
+                                </constraints>
+                            </datePicker>
+                            <navigationBar contentMode="scaleToFill" id="4501" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="215" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="4502"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <constraints>
+                            <constraint id="3282" firstItem="3281" firstAttribute="leading" secondItem="3245" secondAttribute="leading" constant="20"/>
+                            <constraint id="3284" firstItem="3245" firstAttribute="trailing" secondItem="3281" secondAttribute="trailing" constant="20"/>
+                            <constraint id="3285" firstItem="3245" firstAttribute="bottom" secondItem="3281" secondAttribute="bottom" constant="79"/>
+                            <constraint id="5318" firstItem="3241" firstAttribute="bottom" secondItem="3248" secondAttribute="top" constant="1"/>
+                            <constraint id="5319" firstItem="3248" firstAttribute="leading" secondItem="3245" secondAttribute="leading"/>
+                            <constraint id="5320" firstItem="3248" firstAttribute="trailing" secondItem="3245" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem id="4551" key="navigationItem">
+                        <barButtonItem key="rightBarButtonItem" id="4552" title="Listo">
+                            <connections>
+                                <segue id="4569" destination="4461" kind="unwind" unwindAction="UnwindToSintomaFisicoViewController:"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fechaSintomaFisicoDatePicker" destination="3281" id="name-outlet-3281"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3246" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4461" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7197" y="1342"/>
+        </scene>
+        <scene sceneID="3643">
+            <objects>
+                <viewController id="3644" sceneMemberID="viewController" customClass="MapaViewController" storyboardIdentifier="MapaViewControllerStoryboard">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3641"/>
+                        <viewControllerLayoutGuide type="bottom" id="3642"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3645">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3648" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="63" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="4968" firstItem="3648" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" id="3793" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" showsUserLocation="YES">
+                                <rect key="frame" x="0.0" y="130" width="600" height="470"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" id="5181" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="12" y="434" width="240" height="102"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5182" translatesAutoresizingMaskIntoConstraints="NO" text="Hospital" fixedFrame="YES">
+                                        <rect key="frame" x="78" y="20" width="142" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5185" translatesAutoresizingMaskIntoConstraints="NO" image="rojopushpin copia.png" fixedFrame="YES">
+                                        <rect key="frame" x="20" y="10" width="39" height="36"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5186" translatesAutoresizingMaskIntoConstraints="NO" image="morado.png" fixedFrame="YES">
+                                        <rect key="frame" x="20" y="54" width="39" height="36"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5215" translatesAutoresizingMaskIntoConstraints="NO" text="Unidad de salud" fixedFrame="YES">
+                                        <rect key="frame" x="78" y="61" width="142" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="5290" firstItem="5181" firstAttribute="height" constant="102"/>
+                                    <constraint id="5291" firstItem="5181" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="3794" firstItem="3793" firstAttribute="top" secondItem="3645" secondAttribute="top" constant="130"/>
+                            <constraint id="3795" firstItem="3793" firstAttribute="trailing" secondItem="3645" secondAttribute="trailing"/>
+                            <constraint id="3797" firstItem="3793" firstAttribute="leading" secondItem="3645" secondAttribute="leading"/>
+                            <constraint id="4711" firstItem="3793" firstAttribute="bottom" secondItem="3642" secondAttribute="top"/>
+                            <constraint id="4969" firstItem="3641" firstAttribute="bottom" secondItem="3648" secondAttribute="top" constant="1"/>
+                            <constraint id="4970" firstItem="3648" firstAttribute="trailing" secondItem="3645" secondAttribute="trailing"/>
+                            <constraint id="4971" firstItem="3648" firstAttribute="leading" secondItem="3645" secondAttribute="leading"/>
+                            <constraint id="5288" firstItem="3642" firstAttribute="top" secondItem="5181" secondAttribute="bottom" constant="15"/>
+                            <constraint id="5289" firstItem="5181" firstAttribute="leading" secondItem="3793" secondAttribute="leading" constant="12"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Seguro Popular" id="3773" key="navigationItem">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3790">
+                            <rect key="frame" x="230" y="8" width="141" height="29"/>
+                            <segments>
+                                <segment title="Salud"/>
+                                <segment title="Afiliación"/>
+                            </segments>
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" id="4668" title="Buscar" image="Find">
+                            <connections>
+                                <segue id="4705" destination="3829" kind="show" identifier="buscarTabBarSegue"/>
+                            </connections>
+                            <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapaNavigationItem" destination="3773" id="name-outlet-3773"/>
+                        <outlet property="mapaSegmentedControl" destination="3790" id="name-outlet-3790"/>
+                        <outlet property="seguroPopularMapView" destination="3793" id="name-outlet-3793"/>
+                        <outlet property="buscarBarButtonItem" destination="4668" id="name-outlet-4668"/>
+                        <outlet property="elementoUnoLabel" destination="5182" id="name-outlet-5182"/>
+                        <outlet property="elementoDosLabel" destination="5215" id="name-outlet-5215"/>
+                        <outlet property="elementoUnoImageView" destination="5185" id="name-outlet-5185"/>
+                        <outlet property="elementoDosImageView" destination="5186" id="name-outlet-5186"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3646" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287" y="-483"/>
+        </scene>
+        <scene sceneID="3828">
+            <objects>
+                <tableViewController id="3829" sceneMemberID="viewController" customClass="BuscarViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3830">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3833" rowHeight="62" reuseIdentifier="centro">
+                                <rect key="frame" x="0.0" y="72" width="600" height="62"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3833" id="3834">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3829" id="3831"/>
+                            <outlet property="delegate" destination="3829" id="3832"/>
+                        </connections>
+                        <searchBar contentMode="redraw" id="3937" key="tableHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </searchBar>
+                    </tableView>
+                    <connections>
+                        <outlet property="centrosTableView" destination="3830" id="name-outlet-3830"/>
+                        <outlet property="centrosSearchView" destination="3937" id="name-outlet-3937"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3835" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976" y="-497"/>
+        </scene>
+        <scene sceneID="4221">
+            <objects>
+                <viewController storyboardIdentifier="detallesCentro" id="4222" customClass="DetallesCentroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4244"/>
+                        <viewControllerLayoutGuide type="bottom" id="4243"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4230">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4226">
+                                <rect key="frame" x="0.0" y="225" width="320" height="314"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detalleCentro" id="4238" customClass="DetallesViewCell">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4238" id="4241">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detalle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4240">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="4240"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="4240"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detalleLabel" destination="4240" id="4239"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4224" misplaced="YES">
+                                <rect key="frame" x="0.0" y="20" width="320" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="4242"/>
+                                    <constraint id="5138" firstItem="4224" firstAttribute="height" constant="182"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4242"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4242"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5019" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="20" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="5124" firstItem="5019" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1248">
+                                <rect key="frame" x="0.0" y="260" width="600" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detalleCentro" id="1249" customClass="DetallesViewCell" rowHeight="141">
+                                        <rect key="frame" x="0.0" y="30" width="600" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1249" id="1252">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detalle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1251">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="1251"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detalleLabel" destination="1251" id="1250"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <constraints>
+                                    <constraint id="5026" firstItem="1248" firstAttribute="height" constant="320"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4243" firstAttribute="top" secondItem="4226" secondAttribute="bottom" constant="29" id="4231"/>
+                            <constraint firstItem="4226" firstAttribute="trailing" secondItem="4230" secondAttribute="trailing" id="4236"/>
+                            <constraint firstItem="4226" firstAttribute="leading" secondItem="4230" secondAttribute="leading" id="4237"/>
+                            <constraint firstItem="4224" firstAttribute="top" secondItem="4244" secondAttribute="bottom" id="4232"/>
+                            <constraint firstItem="4224" firstAttribute="trailing" secondItem="4230" secondAttribute="trailing" id="4233"/>
+                            <constraint firstItem="4224" firstAttribute="bottom" secondItem="4226" secondAttribute="top" constant="1" id="4234"/>
+                            <constraint firstItem="4224" firstAttribute="leading" secondItem="4230" secondAttribute="leading" id="4235"/>
+                            <constraint id="5023" firstItem="1248" firstAttribute="trailing" secondItem="4230" secondAttribute="trailing"/>
+                            <constraint id="5024" firstItem="1248" firstAttribute="leading" secondItem="4230" secondAttribute="leading"/>
+                            <constraint id="5025" firstItem="4230" firstAttribute="bottom" secondItem="1248" secondAttribute="bottom" constant="20"/>
+                            <constraint id="5108" firstItem="4224" firstAttribute="top" secondItem="5019" secondAttribute="bottom" constant="8"/>
+                            <constraint id="5109" firstItem="4224" firstAttribute="bottom" secondItem="1248" secondAttribute="top"/>
+                            <constraint id="5110" firstItem="4224" firstAttribute="leading" secondItem="4230" secondAttribute="leading" constant="1"/>
+                            <constraint id="5111" firstItem="4224" firstAttribute="trailing" secondItem="4230" secondAttribute="trailing"/>
+                            <constraint id="5129" firstItem="5019" firstAttribute="trailing" secondItem="4230" secondAttribute="trailing"/>
+                            <constraint id="5130" firstItem="5019" firstAttribute="top" secondItem="4244" secondAttribute="bottom"/>
+                            <constraint id="5131" firstItem="5019" firstAttribute="leading" secondItem="4230" secondAttribute="leading"/>
+                            <constraint id="5146" firstItem="4224" firstAttribute="top" secondItem="5019" secondAttribute="bottom" constant="8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4226"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4231"/>
+                                <exclude reference="4232"/>
+                                <exclude reference="4233"/>
+                                <exclude reference="4234"/>
+                                <exclude reference="4235"/>
+                                <exclude reference="4236"/>
+                                <exclude reference="4237"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4226"/>
+                                <include reference="4224"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4231"/>
+                                <include reference="4232"/>
+                                <include reference="4233"/>
+                                <include reference="4234"/>
+                                <include reference="4235"/>
+                                <include reference="4236"/>
+                                <include reference="4237"/>
+                            </mask>
+                        </variation>
+                        <color key="tintColor" colorSpace="calibratedRGB" red="0.69019607843137254" green="0.074509803921568626" blue="0.15294117647058825" alpha="1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalles" id="4229">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="1723"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="4228"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="centroMapView" destination="4224" id="4223"/>
+                        <outlet property="detallesCentroTableView" destination="4226" id="4225"/>
+                        <outlet property="mapCentroActionButton" destination="4228" id="4227"/>
+                        <outlet property="detallesCentroTableView" destination="1248" id="name-outlet-1248"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4245" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="1486"/>
+        </scene>
+        <scene sceneID="4246">
+            <objects>
+                <viewController storyboardIdentifier="detallesUnidad" id="4247" customClass="DetallesUnidadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4274"/>
+                        <viewControllerLayoutGuide type="bottom" id="4273"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4255">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4249">
+                                <rect key="frame" x="0.0" y="190" width="320" height="358"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detalleUnidad" id="4268" customClass="DetallesViewCell">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4268" id="4271">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detalle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4270">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="4270"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="4270"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detalleLabel" destination="4270" id="4269"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4253" misplaced="YES">
+                                <rect key="frame" x="0.0" y="20" width="320" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="4272"/>
+                                    <constraint id="5139" firstItem="4253" firstAttribute="height" constant="173"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4272"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4272"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5020" translatesAutoresizingMaskIntoConstraints="NO" image="FONDO22.png">
+                                <rect key="frame" x="0.0" y="20" width="600" height="50"/>
+                                <constraints>
+                                    <constraint id="5125" firstItem="5020" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1215" misplaced="YES">
+                                <rect key="frame" x="0.0" y="259" width="600" height="341"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detalleUnidad" id="1216" customClass="DetallesViewCell" rowHeight="154">
+                                        <rect key="frame" x="0.0" y="30" width="600" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1216" id="1217">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="153"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detalle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1231">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="1231"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detalleLabel" destination="1231" id="name-outlet-1231"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <constraints>
+                                    <constraint id="5032" firstItem="1215" firstAttribute="height" constant="349"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4249" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing" id="4261"/>
+                            <constraint firstItem="4249" firstAttribute="leading" secondItem="4255" secondAttribute="leading" id="4262"/>
+                            <constraint firstItem="4273" firstAttribute="top" secondItem="4249" secondAttribute="bottom" constant="20" id="4256"/>
+                            <constraint firstItem="4249" firstAttribute="leading" secondItem="4255" secondAttribute="leading" id="4263"/>
+                            <constraint firstItem="4249" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing" id="4264"/>
+                            <constraint firstItem="4249" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing" id="4265"/>
+                            <constraint firstItem="4249" firstAttribute="leading" secondItem="4255" secondAttribute="leading" id="4266"/>
+                            <constraint firstItem="4273" firstAttribute="top" secondItem="4249" secondAttribute="bottom" constant="20" id="4257"/>
+                            <constraint firstItem="4253" firstAttribute="top" secondItem="4274" secondAttribute="bottom" id="4258"/>
+                            <constraint firstItem="4253" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing" id="4259"/>
+                            <constraint firstItem="4249" firstAttribute="top" secondItem="4253" secondAttribute="bottom" constant="8" id="4267"/>
+                            <constraint firstItem="4253" firstAttribute="leading" secondItem="4255" secondAttribute="leading" id="4260"/>
+                            <constraint id="5028" firstItem="1215" firstAttribute="bottom" secondItem="4255" secondAttribute="bottom"/>
+                            <constraint id="5029" firstItem="1215" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing"/>
+                            <constraint id="5030" firstItem="1215" firstAttribute="leading" secondItem="4255" secondAttribute="leading"/>
+                            <constraint id="5114" firstItem="4253" firstAttribute="top" secondItem="5020" secondAttribute="bottom"/>
+                            <constraint id="5115" firstItem="4253" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing"/>
+                            <constraint id="5116" firstItem="4253" firstAttribute="leading" secondItem="4255" secondAttribute="leading"/>
+                            <constraint id="5117" firstItem="1215" firstAttribute="top" secondItem="4253" secondAttribute="bottom" constant="8"/>
+                            <constraint id="5126" firstItem="5020" firstAttribute="top" secondItem="4274" secondAttribute="bottom"/>
+                            <constraint id="5127" firstItem="5020" firstAttribute="trailing" secondItem="4255" secondAttribute="trailing"/>
+                            <constraint id="5128" firstItem="5020" firstAttribute="leading" secondItem="4255" secondAttribute="leading"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4249"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4256"/>
+                                <exclude reference="4257"/>
+                                <exclude reference="4258"/>
+                                <exclude reference="4259"/>
+                                <exclude reference="4260"/>
+                                <exclude reference="4261"/>
+                                <exclude reference="4262"/>
+                                <exclude reference="4263"/>
+                                <exclude reference="4264"/>
+                                <exclude reference="4265"/>
+                                <exclude reference="4266"/>
+                                <exclude reference="4267"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4249"/>
+                                <include reference="4253"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4256"/>
+                                <include reference="4257"/>
+                                <include reference="4258"/>
+                                <include reference="4259"/>
+                                <include reference="4260"/>
+                                <include reference="4261"/>
+                                <include reference="4262"/>
+                                <include reference="4263"/>
+                                <include reference="4264"/>
+                                <include reference="4265"/>
+                                <include reference="4266"/>
+                                <include reference="4267"/>
+                            </mask>
+                        </variation>
+                        <color key="tintColor" colorSpace="calibratedRGB" red="0.69019607843137254" green="0.074509803921568626" blue="0.15294117647058825" alpha="1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalles" id="4254">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="1603"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="4251"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detallesUnidadTableView" destination="4249" id="4248"/>
+                        <outlet property="mapUnidadActionButton" destination="4251" id="4250"/>
+                        <outlet property="unidadMapView" destination="4253" id="4252"/>
+                        <outlet property="detallesUnidadTableView" destination="1215" id="name-outlet-1215"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4275" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="1488"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ComoMeSiento" width="18" height="18"/>
+        <image name="Email" width="18" height="18"/>
+        <image name="Emocional" width="18" height="18"/>
+        <image name="Find" width="18" height="18"/>
+        <image name="Fisico" width="18" height="18"/>
+        <image name="Notifications" width="18" height="18"/>
+        <image name="User" width="18" height="18"/>
+        <image name="Map" width="24" height="24"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="Icon-72.png" width="72" height="72"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Seguro-Popular.jpg" width="372" height="196"/>
+        <image name="logo.png" width="1074" height="1075"/>
+        <image name="sick.png" width="50" height="50"/>
+        <image name="asustado.jpg" width="113" height="113"/>
+        <image name="cansado.jpg" width="113" height="113"/>
+        <image name="contento.jpg" width="113" height="113"/>
+        <image name="enojado.jpg" width="113" height="113"/>
+        <image name="hambriento.jpg" width="113" height="113"/>
+        <image name="leve.jpg" width="106" height="108"/>
+        <image name="maximodolor.jpg" width="113" height="113"/>
+        <image name="moderado.jpg" width="108" height="112"/>
+        <image name="muysevero.jpg" width="114" height="114"/>
+        <image name="severo.jpg" width="113" height="113"/>
+        <image name="sindolor.jpg" width="104" height="104"/>
+        <image name="triste.jpg" width="113" height="113"/>
+        <image name="fisico.png" width="27" height="27"/>
+        <image name="emocional.png" width="27" height="27"/>
+        <image name="logo_derecha.png" width="934" height="477"/>
+        <image name="logo_hidalgo.png" width="2865" height="827"/>
+        <image name="BARRA.png" width="4539" height="1188"/>
+        <image name="FONDOS-01 (1).jpg" width="4500" height="8000"/>
+        <image name="FONDOO2.png" width="965" height="128"/>
+        <image name="FONDO22.png" width="1018" height="138"/>
+        <image name="t1.png" width="189" height="184"/>
+        <image name="Happy.png" width="256" height="256"/>
+        <image name="Smile.png" width="256" height="256"/>
+        <image name="Sad.png" width="256" height="256"/>
+        <image name="Worried.png" width="256" height="256"/>
+        <image name="Cry-WF.png" width="256" height="256"/>
+        <image name="Cry.png" width="256" height="256"/>
+        <image name="Surprised.png" width="256" height="256"/>
+        <image name="Sleepy-02.png" width="256" height="256"/>
+        <image name="Angry-WF.png" width="256" height="256"/>
+        <image name="Annoyed-WF.png" width="256" height="256"/>
+        <image name="Sad-WF.png" width="256" height="256"/>
+        <image name="rojopushpin copia.png" width="256" height="256"/>
+        <image name="morado.png" width="256" height="256"/>
+        <image name="rojopushpin.png" width="256" height="256"/>
+    </resources>
+    <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+</document>

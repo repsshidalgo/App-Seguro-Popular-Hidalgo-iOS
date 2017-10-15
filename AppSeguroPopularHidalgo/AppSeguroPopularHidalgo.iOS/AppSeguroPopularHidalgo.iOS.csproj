@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{02C6CD60-59C6-41F3-BA7C-1AC792B72832}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AppSeguroPopularHidalgo.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>AppSeguroPopularHidalgo.iOS</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>false</MtouchProfiling>
+    <CodesignKey>iPhone Developer: Jesus De La Cruz Gálvez (8ZZ29B2EC7)</CodesignKey>
+    <CodesignProvision>iOS Team Provisioning Profile: com.repsshidalgo.SeguroPopularHidalgo</CodesignProvision>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution: Regimen Estatal de Proteccion Social en Salud del Estado de Hidalgo (2J48N9PR7G)</CodesignKey>
+    <CodesignProvision>DistributionApp</CodesignProvision>
+    <BuildIpa>True</BuildIpa>
+    <IpaIncludeArtwork>True</IpaIncludeArtwork>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Distribution: Regimen Estatal de Proteccion Social en Salud del Estado de Hidalgo (2J48N9PR7G)</CodesignKey>
+    <CodesignProvision>1f3ac3a8-1ce3-45cb-9298-c54ae1ed5ebd</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>false</MtouchProfiling>
+    <CodesignKey>iPhone Distribution: Regimen Estatal de Proteccion Social en Salud del Estado de Hidalgo (2J48N9PR7G)</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <BuildIpa>False</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
+    <IOSDebuggerPort>10000</IOSDebuggerPort>
+    <CodesignProvision>Iphone6App</CodesignProvision>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Connectivity.Plugin">
+      <HintPath>..\..\packages\Xam.Plugin.Connectivity.1.0.3\lib\Xamarin.iOS10\Connectivity.Plugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Connectivity.Plugin.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugin.Connectivity.1.0.3\lib\Xamarin.iOS10\Connectivity.Plugin.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Azure.Mobile.Client.3.1.0\lib\Xamarin.iOS10\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Azure.Mobile.Client.3.1.0\lib\Xamarin.iOS10\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.2.1\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.0\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.0\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.0\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62684c7b4f184e3f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.0\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Azure.NotificationHubs.iOS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Azure.NotificationHubs.iOS.1.2.5.2\lib\Xamarin.iOS10\Xamarin.Azure.NotificationHubs.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppSeguroPopularHidalgo\AppSeguroPopularHidalgo.csproj">
+      <Name>AppSeguroPopularHidalgo</Name>
+      <Project>{042F0706-8E86-4F27-95F1-FE62F6D7FA44}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ComoMeSiento.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ComoMeSiento.imageset\ic_book_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ComoMeSiento.imageset\ic_book_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ComoMeSiento.imageset\ic_book_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Email.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Email.imageset\ic_chat_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Email.imageset\ic_chat_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Email.imageset\ic_chat_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Emocional.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Emocional.imageset\ic_sentiment_satisfied_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Emocional.imageset\ic_sentiment_satisfied_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Emocional.imageset\ic_sentiment_satisfied_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Find.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Find.imageset\ic_search_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Find.imageset\ic_search_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Find.imageset\ic_search_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Fisico.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Fisico.imageset\ic_airline_seat_flat_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Fisico.imageset\ic_airline_seat_flat_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Fisico.imageset\ic_airline_seat_flat_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Notifications.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Notifications.imageset\ic_notifications_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Notifications.imageset\ic_notifications_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Notifications.imageset\ic_notifications_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\User.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\User.imageset\ic_person_white_18pt.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\User.imageset\ic_person_white_18pt_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\User.imageset\ic_person_white_18pt_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Map.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Map.imageset\ic_map_white.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Map.imageset\ic_map_white_2x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Map.imageset\ic_map_white_3x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo29x29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo58x58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo80x80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo120x120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo57x57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo114x114.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo180x180.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo87x87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo40x40.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo50x50.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo100x100.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo72x72.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo144x144.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo76x76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo152x152.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\logo167x167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="MainIpad.storyboard" />
+    <InterfaceDefinition Include="MainUniversal.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarSintomaViewController.cs" />
+    <Compile Include="AgregarSintomaViewController.designer.cs">
+      <DependentUpon>AgregarSintomaViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppTabBarController.cs" />
+    <Compile Include="AppTabBarController.designer.cs">
+      <DependentUpon>AppTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Azure\MobileAppConnection.cs" />
+    <Compile Include="BuscarViewController.cs" />
+    <Compile Include="BuscarViewController.designer.cs">
+      <DependentUpon>BuscarViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs" />
+    <Compile Include="CentroTableSource.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DetallesCentroViewController.cs" />
+    <Compile Include="DetallesCentroViewController.designer.cs">
+      <DependentUpon>DetallesCentroViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesNotificacionViewController.cs" />
+    <Compile Include="DetallesNotificacionViewController.designer.cs">
+      <DependentUpon>DetallesNotificacionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesUnidadViewController.cs" />
+    <Compile Include="DetallesUnidadViewController.designer.cs">
+      <DependentUpon>DetallesUnidadViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesViewCell.cs" />
+    <Compile Include="DetallesViewCell.designer.cs">
+      <DependentUpon>DetallesViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FechaSintomaEmocionalViewController.cs" />
+    <Compile Include="FechaSintomaEmocionalViewController.designer.cs">
+      <DependentUpon>FechaSintomaEmocionalViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FechaSintomaFisicoViewController.cs" />
+    <Compile Include="FechaSintomaFisicoViewController.designer.cs">
+      <DependentUpon>FechaSintomaFisicoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginViewController.cs" />
+    <Compile Include="LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MapaViewController.cs" />
+    <Compile Include="MapaViewController.designer.cs">
+      <DependentUpon>MapaViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapDelegate.cs" />
+    <Compile Include="NavigationAppController.cs" />
+    <Compile Include="NavigationAppController.designer.cs">
+      <DependentUpon>NavigationAppController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificacionesTableViewController.cs" />
+    <Compile Include="NotificacionesTableViewController.designer.cs">
+      <DependentUpon>NotificacionesTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificacionViewController.cs" />
+    <Compile Include="NotificacionViewController.designer.cs">
+      <DependentUpon>NotificacionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PolizaViewController.cs" />
+    <Compile Include="PolizaViewController.designer.cs">
+      <DependentUpon>PolizaViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Email.cs" />
+    <Compile Include="SintomaEmocionalTableViewCell.cs" />
+    <Compile Include="SintomaEmocionalTableViewCell.designer.cs">
+      <DependentUpon>SintomaEmocionalTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomaEmocionalViewController.cs" />
+    <Compile Include="SintomaEmocionalViewController.designer.cs">
+      <DependentUpon>SintomaEmocionalViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomaFisicoTableViewCell.cs" />
+    <Compile Include="SintomaFisicoTableViewCell.designer.cs">
+      <DependentUpon>SintomaFisicoTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomaFisicoViewController.cs" />
+    <Compile Include="SintomaFisicoViewController.designer.cs">
+      <DependentUpon>SintomaFisicoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomasEmocionalesTableSource.cs" />
+    <Compile Include="SintomasEmocionalesTableViewController.cs" />
+    <Compile Include="SintomasEmocionalesTableViewController.designer.cs">
+      <DependentUpon>SintomasEmocionalesTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomasFisicosTableSource.cs" />
+    <Compile Include="SintomasFisicosTableViewController.cs" />
+    <Compile Include="SintomasFisicosTableViewController.designer.cs">
+      <DependentUpon>SintomasFisicosTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomasTableSource.cs" />
+    <Compile Include="SintomasTableViewController.cs" />
+    <Compile Include="SintomasTableViewController.designer.cs">
+      <DependentUpon>SintomasTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomasViewController.cs" />
+    <Compile Include="SintomasViewController.designer.cs">
+      <DependentUpon>SintomasViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SintomaTableViewCell.cs" />
+    <Compile Include="SintomaTableViewCell.designer.cs">
+      <DependentUpon>SintomaTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudAtencionViewController.cs" />
+    <Compile Include="SolicitudAtencionViewController.designer.cs">
+      <DependentUpon>SolicitudAtencionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\iOSConnection.cs" />
+    <Compile Include="TableSource.cs" />
+    <Compile Include="TokenRegistration.cs" />
+    <Compile Include="UnidadSaludTableSource.cs" />
+    <Compile Include="UserNotificationCenterDelegate .cs" />
+    <Compile Include="UsuarioTabBarController.cs" />
+    <Compile Include="UsuarioTabBarController.designer.cs">
+      <DependentUpon>UsuarioTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioViewController.cs" />
+    <Compile Include="UsuarioViewController.designer.cs">
+      <DependentUpon>UsuarioViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ConfiguracionApp.cs" />
+    <Compile Include="MenuViewController.cs" />
+    <Compile Include="MenuViewController.designer.cs">
+      <DependentUpon>MenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainNavigationController.cs" />
+    <Compile Include="MainNavigationController.designer.cs">
+      <DependentUpon>MainNavigationController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\FONDOO2.png" />
+    <BundleResource Include="Resources\FONDO22.png" />
+    <BundleResource Include="Resources\t1.png" />
+    <BundleResource Include="Resources\Happy.png" />
+    <BundleResource Include="Resources\Smile.png" />
+    <BundleResource Include="Resources\Sad.png" />
+    <BundleResource Include="Resources\Worried.png" />
+    <BundleResource Include="Resources\Cry-WF.png" />
+    <BundleResource Include="Resources\Cry.png" />
+    <BundleResource Include="Resources\Surprised.png" />
+    <BundleResource Include="Resources\Sleepy-02.png" />
+    <BundleResource Include="Resources\Angry-WF.png" />
+    <BundleResource Include="Resources\Annoyed-WF.png" />
+    <BundleResource Include="Resources\Sad-WF.png" />
+    <BundleResource Include="Resources\rojopushpin copia.png" />
+    <BundleResource Include="Resources\morado.png" />
+    <BundleResource Include="Resources\rojopushpin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Seguro-Popular.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="azure-messaging">
+      <Visible>False</Visible>
+      <Version>1.2.5.2</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\asustado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cansado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\contento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\enojado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hambriento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\leve.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\maximodolor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moderado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\muysevero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\severo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sindolor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\triste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fisico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\emocional.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo_hidalgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PluginsHelp\ConnectivityReadme.txt" />
+    <BundleResource Include="Resources\BARRA.png" />
+    <BundleResource Include="Resources\FONDOS-01 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images.xcassets\Map.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+</Project>
